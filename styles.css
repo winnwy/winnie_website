@@ -1,0 +1,32 @@
+body {
+    /* height: 100svh; */
+    background: linear-gradient(to bottom, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
+}
+
+.panel {
+  min-height: 100svh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.sun {
+  background-color: #ff8c1a;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#movingElement {
+  position: fixed; /* Fixed position to keep it in view */
+  top: 0; /* Start at the top of the page */
+  left: 0; 
+  transition: transform 0.3s ease-out; 
+}
+
+#movingElement > img {
+  height: 10svh;
+}
+
