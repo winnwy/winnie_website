@@ -21,8 +21,15 @@ body {
 
 #movingElement {
   position: fixed; /* Fixed position to keep it in view */
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
   top: 0; /* Start at the top of the page */
   left: 0; 
+  height: 15svh;
+  width: 15svh;
+  border-radius: 50%;
+  background-color: white;
   transition: transform 0.3s ease-out; 
 }
 
