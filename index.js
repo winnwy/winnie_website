@@ -21,3 +21,21 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.querySelector('#menu-icon').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    if (sidebar.classList.contains('sidebar-active')) {
+        sidebar.classList.remove('sidebar-active');
+    } else {
+        sidebar.classList.add('sidebar-active');
+    }
+});
+
+document.querySelector('#close-icon').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    if (sidebar.classList.contains('sidebar-active')) {
+        sidebar.classList.remove('sidebar-active');
+    } else {
+        sidebar.classList.add('sidebar-active');
+    }
+});
+
