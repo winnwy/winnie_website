@@ -24,8 +24,21 @@
 }
 
 #pn1 {
-  margin-top: 40px;
-  padding: 20px 10px;
+  margin-top: 80px;
+  background-color: rosybrown;
+  background-image: url('./images/header.png');
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  color: blue;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#pn1 h1 {
+  align-self: center;
+  justify-self: center;
+  text-transform: capitalize;
 }
 
 #pn2 {
