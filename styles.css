@@ -21,10 +21,10 @@
 .panel {
   background-color: white;
   grid-column: 3 / span 8 ; 
+  scroll-margin-top: 50px; /*Prevent anchor links from scrolling behind the sticky navbar */
 }
 
-#pn1 {
-  margin-top: 80px;
+#pn1 .content{
   background-color: rosybrown;
   background-image: url('./images/header.png');
   padding-top: 200px;
@@ -36,8 +36,9 @@
   border: black solid 5px;
 }
 
-#pn1 h1 {
+.panel h1 {
   text-transform: capitalize;
+  text-align: center;
 }
 
 #pn2 {
@@ -49,7 +50,6 @@
 #pn2 h1, p{
   background-color: #c06c84;
   color: white;
-  text-align: center;
 }
 
 #pn2 p {
@@ -58,27 +58,31 @@
 
 #pn2 .content {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 0.5fr;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-}
-
-#pn2 .grid-item {
-  grid-column: span 4; 
 }
 
 #pn2 .grid-item img {
   width: 100%; 
   height: auto; 
   display: block;
-  margin-bottom: 10px;
+  border: black solid 5px;  
+  border-radius: 16px;
 }
 
 
-#pn3 h1 {
-  text-transform: capitalize;
-  text-align: center;
+#pn3 .content {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr)
+}
+
+#pn3 .grid-item img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -109,12 +113,15 @@
   height: 60%;
 }
 
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
 nav ul {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -140,11 +147,8 @@ nav a:hover {
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
   right: 0;
   height: 100svh;
-  width: 100%;
   z-index: 1002;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px); 
@@ -177,15 +181,20 @@ nav a:hover {
 
 
 @media (max-width: 960px) {
+  #movingElement {
+    height: 60px;
+    width: 60px;
+  }
   .nav-item {
     display: none;
   }
   #menu-icon {
     display: flex;
   }
-  #pn2 .grid-item {
-    grid-column: span 12; 
+  
+  #pn1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   
-
 }
