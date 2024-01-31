@@ -24,7 +24,7 @@
   scroll-margin-top: 50px; /*Prevent anchor links from scrolling behind the sticky navbar */
 }
 
-#pn1 .content{
+#pn1 {
   background-color: rosybrown;
   background-image: url('./images/header.png');
   padding-top: 200px;
@@ -37,7 +37,6 @@
 }
 
 .panel h1 {
-  text-transform: capitalize;
   text-align: center;
 }
 
@@ -47,43 +46,83 @@
 }
 
 
-#pn2 h1, p{
+#pn2 h1, #pn2 p{
   background-color: #c06c84;
   color: white;
 }
 
-#pn2 p {
-  text-align: center;
-}
-
 #pn2 .content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr, 0.5fr;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
 }
 
-#pn2 .grid-item img {
-  width: 100%; 
-  height: auto; 
-  display: block;
-  border: black solid 5px;  
-  border-radius: 16px;
+#pn2 .content .icons {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#pn2 .icons img {
+  width: 100%;
+}
+
+#pn2 .content .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 5px;
+}
+
+#pn2 .content ul {
+  list-style: none;
 }
 
 
 #pn3 .content {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: repeat(1, 1fr)
+  grid-template-rows: repeat(2, 1fr);
 }
 
-#pn3 .grid-item img {
-  width: 100%;
-  height: auto;
+#pn3 .row1 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.25fr 1fr;
 }
+
+#pn3 .row2 {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr;
+}
+
+#run-row1-gap {
+  background-color: #ff8c1a;
+}
+
+#run-row1-main {
+  background-color: beige;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#run-row2-gap1 {
+  background-color: aqua;
+}
+
+#run-row2-gap2 {
+  background-color: azure;
+}
+
+#run-row2-main {
+  background-color: beige;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 .sun {
@@ -195,6 +234,10 @@ nav a:hover {
   #pn1 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  #pn3 {
+
   }
   
 }
