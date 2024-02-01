@@ -127,6 +127,17 @@
   align-items: center;
 }
 
+.photos-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.photos-main .photos img{
+  width: 100%;
+  grid-column: span 1;
+  border-radius: 16px;
+}
 
 
 .sun {
