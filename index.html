@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winnie's Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -32,10 +36,9 @@
             <h1>I'm Winnie.</h1>
         </div>
         <div class="panel" id="pn2">
-            <div>
-                <span><h1>About Me</h1></span>
-                <div><hr></div>
-            </div>
+            <h2>
+                About Me
+            </h2>
 
             <div class="content">
                 <div class="icons">
@@ -46,15 +49,15 @@
 
                 <div class="text">
                     <ul>
-                        <li>Name: Winnie Zhou</li>
-                        <li>Age: 23</li>
-                        <li>Major: Information Technology</li>
-                        <li>Interests: 
+                        <li><span class="title">Name</span>: Winnie Zhou</li>
+                        <li><span class="title">Age</span>: 23</li>
+                        <li><span class="title">Major</span>: Information Technology</li>
+                        <li><span class="title">Interests</span>: 
                             <ul>
                                 <li>I enjoy solving problems with coding.</li>
                                 <li>I like walking and running.</li>
                                 <li>I love exploring diverse flavors.</li>
-                                <li>...</li>
+                                <li><span class="ellipsis">...</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,45 +76,34 @@
         </div>
         
         <div class="panel" id="pn3">
-            <div>
-                <span><h1>Photos</h1></span>
-                <div><hr></div>
-            </div>
-            <p>My friend says I'm not good at taking photos of people but am pretty good at capturing scenery.</p>
+            <h2>
+                Photos
+            </h2>
+            <div class="intro">I enjoy capturing images of the sky. It's my way to keep track of time.</div>
             <div class="photos-main">
                 <div class="photos" id="photos-1">
                    <a href="./images/20230810_063354.jpg" target="blank"> <img src="./images/20230810_063354.jpg" alt="a photo of sky taken in the morning"> </a>
+                    <div class="text">06AM</div>
                 </div>
                 <div class="photos" id="photos-2">
                    <a href="./images/20231225_123705.jpg" target="blank"> <img src="./images/20231225_123705.jpg" alt="a photo of sky taken in noon"> </a>
+                    <div class="text">12PM</div>
                 </div>
                 <div class="photos" id="photos-3">
                    <a href="./images/20230713_172032.jpg" target="blank"> <img src="./images/20230713_172032_2.jpg" alt="a photo of sky taken in the evening"> </a>
+                    <div class="text">05PM</div>
                 </div>
                 <div class="photos" id="photos-4">
                    <a href="./images/20231225_210909.jpg" target="blank"><img src="./images/20231225_210909.jpg" alt="a photo of sky taken at night"></a>
+                    <div class="text">09PM</div>
                 </div>
             </div>
         </div>
 
         <div class="panel" id="pn4">
-            <div>
-                <span><h1>Personal Bests</h1></span>
-                <div><hr></div>
-            </div>
-
-            <div class="content">
-                <div class="row1">
-
-                </div>
-                <div class="row2">
-
-                </div>
-                <div class="row3">
-
-                </div>
-            </div>
-            
+            <h2>
+                Personal Bests
+            </h2>
             <div class="content">
                 <div class="left">
                     <div class="text">
@@ -127,12 +119,15 @@
 
                 <div class="right">
                     <div class="row1">
-                        <div class="row1-gap">
+                        <div class="row1-gap1">
 
                         </div>
+                        <div class="row1-gap2">
 
+                        </div>
+                        
                         <div class="row1-text">
-                            <p>44:01</p>
+                            <p class="time">44:01</p>
                             <p>10KM</p>
                             <p>@Centennial Park</p>
                         </div>
@@ -144,7 +139,7 @@
 
                         </div>
                         <div class="row2-text">
-                            <p>01:39:18</p>
+                            <p class="time">01:39:18</p>
                             <p>Half Marathon</p>
                             <p>@Sydney Marathon</p>
                         </div>
@@ -155,11 +150,14 @@
 
                     <div class="row3">
                         <div class="row3-text">
-                            <p>02:29:58</p>
+                            <p class="time">02:29:58</p>
                             <p>28KM</p>
                             <p>@Centennial Park</p>
                         </div>
-                        <div class="row3-gap">
+                        <div class="row3-gap1">
+
+                        </div>
+                        <div class="row3-gap2">
 
                         </div>
                     </div>
@@ -168,12 +166,14 @@
         </div>
 
         <div class="panel" id="pn5">
-            <div>
-                <span><h1>Contact</h1></span>
-                <div><hr></div>
-            </div>
+            <h2>
+                Contact
+            </h2>
             <div class="content">
-                <p>If you enjoy exploring various things as much as I do, let's get in touch!</p>
+                <h3>Do you get a thrill from exploring new things, just like I do? </h3>
+                <p>Whether it's running, photography, or any other adventure, </p>
+                <p>I'm always looking to connect with like-minded explorers. </p>
+                <p>Let's get in touch!</p>
                 <a href="mailto:winnwyz@gmail.com"><button class="btn">CONTACT ME</button></a>
             </div>
            
